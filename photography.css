@@ -1,0 +1,324 @@
+html, body{
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+
+header{
+	background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(beauty.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 110vh;
+	overflow: hidden;
+}
+.navbar #logo{
+	font-family: 'Dancing script'
+}
+.navbar-nav .nav-item {
+	margin: 0px 1rem
+}
+nav .collapse .navbar-nav .nav-item .nav-link{
+	color: white
+}
+.title .col{
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	margin: 0 auto;
+}
+.h1{
+	color: #fff
+}
+ .fa-camera, .fa-arrow-right{
+	color: #FFFF00
+
+}
+.col p{
+	color: #fff;
+	letter-spacing: 0.2rem;
+	line-height: 0.3rem
+}
+.col .btn-explore{
+	padding: 0.5rem 0.9rem;
+	margin-top: 1rem;
+	color: #fff;
+	background-color: #000;
+	 font-size: 1.4rem;
+	 line-height: 0.6rem; 
+	 letter-spacing: 0.3rem
+
+}
+
+
+/*----------------------------------Services ---------------------------------------------*/
+.our-services{
+	margin: 3rem 2rem;
+}
+.heading{
+	text-align: center;
+	margin: 2rem 1rem
+}
+.row{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	margin: 2rem 0;
+  
+}
+.col-1{
+	min-width: 350px;
+	margin: 1.5rem;
+	justify-content: space-between;
+	flex-basis: 30%;
+	float: right;
+	align-items: center;
+	z-index: 1;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.col-1 img{
+	width: 100%
+}
+
+/*-------------------------------------why-to Scetion--------------------------------*/
+.why-to{
+	margin: 5rem auto;
+	min-width: 350px;
+	width: 60%;
+	text-align: center;
+	border: 1px solid blue;
+	position: relative;
+	background-color: #000;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	color:  whitesmoke
+}
+.row-2{
+	display: flex;
+	align-items: center;
+	margin: 0 
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 350px;
+    align-items: center;
+    justify-content: space-around;
+}
+.col-2 img {
+	width: 100%
+}
+.btn-booking{
+border-radius: 10%;
+background-color: yellow;
+color: #000000;
+border: 1px solid black;
+font-size: 1.2rem
+}
+
+
+/*---------------------------Container and Footer Section----------------------------------------------------*/
+.container{
+	margin: 7rem auto;
+	padding: 0px;
+	width: 50%;
+	border: 1px solid grey;
+	text-align: center;
+}
+.btn-submit{
+	background-color: black;
+	color: yellow
+}
+
+span{
+	color: yellow
+}
+footer{
+	padding-bottom: 0;
+	margin-bottom: 0;
+	text-align: center;
+	color: #fff;
+	background-color: #000;
+}	
+hr {
+ border: 0; 
+ background-color:#fff; 
+ height: 0.5px; 
+ padding: 0px;
+ margin: 0px
+}
+.text{
+	margin-top: 0px;
+	margin-bottom: 0.3rem;
+	padding: 0px;
+}
+
+/*--------------------media Query for mobile --------------------------------------------------*/
+@media only screen and (max-width: 680px){
+	html, body{
+		overflow-x: hidden;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	header{
+		height: 100vh;
+	}
+
+	.title .col{
+	text-align: center;
+	top: 40%;
+	left: 0%;
+}
+
+
+/*--------------------Services Section------------------------------------------------------------*/
+	.row, .row-2{
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+	}
+	  .col-1{
+		float: none;
+		padding-left: 0px;
+		margin: 2rem auto;
+		width: 100%;
+		flex-basis: 100% !important;
+	}
+	.col-1 img{/*
+		max-width: ;
+		padding-left: 0*/
+	}
+
+	.our-services {
+		margin: 2rem 0rem;
+	}
+
+
+
+/*-----------------------------------Why-to Section----------------------------*/
+.why-to{
+		margin: 0px;
+		padding: 0px;
+		border: none;
+		width: 100%;
+	}
+
+.col p{
+	color: #fff;
+	letter-spacing: 0rem;
+	line-height: 0.3rem
+}
+
+.col .btn-explore{
+	padding: 0.4rem 0.6rem;
+	margin-top: 1rem;
+	color: #fff;
+	background-color: #000;
+	 font-size: 1.3rem;
+	 line-height: 0.6rem; 
+	 letter-spacing: 0.1rem
+
+}
+.col-2{
+		flex-basis: 100%;
+		margin: 0;
+		padding: 0;
+		background-color: #000;
+	}
+/*------------------Notification and Footer Section--------------------*/
+
+.container{
+	width: 100%;
+	font-size: 0.8rem
+}
+footer{
+	font-size: 0.7rem;
+}
+}
+
+
+
+
+/*--------------------------Media query for tablts and above------------------------*/
+@media only screen and (min-width: 681px) and (max-width: 960px){
+	html, body{
+		overflow-x: hidden;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	header{
+		height: 100vh;
+
+	}
+
+   .title .col{
+	text-align: center;
+	top: 40%;
+	left: 0;
+}
+
+
+/*--------------------Services Section---------------------------*/
+	.row, .row-2{
+		flex-flow: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+	  .col-1{
+		float: right;
+		padding-left: 0px;
+		margin: 2rem auto;
+		flex-basis: 50% !important;
+	}
+	.col-1 img{/*
+		max-width: ;
+		padding-left: 0*/
+	}
+
+	.our-services {
+		margin: 2rem 0rem;
+	}
+
+
+
+/*-----------------------------------Why-to Section----------------------------*/
+.why-to{
+		margin: 0px;
+		padding: 0px;
+		border: none;
+		width: 100%;
+		background-color: ;
+	}
+
+.col p{
+	color: #fff;
+	letter-spacing: 0.2rem;
+	line-height: 0.3rem
+}
+
+.col .btn-explore{
+	padding: 0.5rem 0.7rem;
+	margin-top: 1rem;
+    font-size: 1.3rem;
+	line-height: 0.6rem; 
+	letter-spacing: 0.1rem
+
+}
+.col-2{
+		flex-basis: 50%;
+		margin: 0;
+		padding: 0;
+		background-color: #000;
+	}
+/*------------------Notification and Footer Section--------------------*/
+
+.container{
+	width: 100%;
+	font-size: 0.9rem
+}
+footer{
+	font-size: 0.8rem;
+}
+}
+
